@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+html{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/Backgroud.Desk.png");
+    background-position: 100% 0%;
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    text-align: left;
+    text-decoration: none;
+    background-clip: border-box;
+    -webkit-text-fill-color: inherit;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    padding-left: 15%;
+    padding-right: 15%;
+    align-content: center;
+    position: static;
+    margin-right: 18.5%;
+    height: 100vh;
+    align-items: center;
+    background-color: rgb(45, 50, 80);
+    opacity: 0.96;
+    text-align: center;
+    transition: 0.2s;
+}
+.Login{
+    display: flex;
+    align-items: center;
+}
+.Title{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 115%;
+    margin-bottom: 10px;
+}
+.Login img{
+    width: 27%;
+    height: auto;
+}
+.Login_box{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+.Title h1{
+    font-weight: 600;
+    padding-top: 12px;
+    margin: 0;
+}
+#Form{
+  text-align: justify
+}
+form{
+  text-align: center
+}
+
+#Form label{
+  float: left;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 98%;
+  margin-bottom: 5px;
+}
+#Form a{
+  display: block;
+  text-align: right;
+  text-decoration: none;
+  color: #666f79;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 85%;
+  transition: 0.2s;
+}
+.buttomLogin{
+      background: #697b68;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 85%;
+    transition: 0.2s;
+}
+.text{
+    padding-top: 12px;
+    padding-left: 4%;
+    width: 94%;
+    padding-bottom: 12px;
+    text-align: left;
+    border: 0px;
+    color: #bfbfbf;
+    background: #424769;
+    border-left: solid 5px #697b69;
+    margin-bottom: 10px;
+    transition: 0.2s;
+}
+
+.Checkbox_Alum-Docent {
+  position: relative;
+  top: 20px;
+  left: 30px;  
+  z-index: 10;
+}
+
+.button {
+  background-color: #434968;
+  width: 60px;
+  height: 30px;
+  border-radius: 200px;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.2s;
+}
+.button::before{
+    position: absolute;
+    content: '';
+    background-color: white;
+    width: 26px;
+    height: 26px;
+    border-radius: 200px;
+    margin-top: 2px;
+    margin-left: 4px;
+    transition: 0.2s;
+}
+input:checked + .button{
+  background-color: #697b69;
+}
+input:checked + .button::before{
+  transform: translateX(26px);
+}
+.Checkbox_button{
+  display: none;
+}
