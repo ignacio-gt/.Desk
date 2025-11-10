@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    background-color: #dee1e7;
+    font-family: 'Poppins', sans-serif;
+}
+h1{
+    margin: 0px;
+}
+.containerHeader{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 5%;
+    border-bottom: solid 5px #435e83;
+    background-image: url(../img/decorationDashboard.png);
+    background-position: 50% 50%;
+    background-size: contain;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    justify-content:flex-end;
+    align-items: center;
+}
+.containerHeader img{
+        width: 52px;
+}
+.container{
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 95%;
+}
+.wellcomeHome{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+.wellcomeText{
+    margin-left:10px;
+    color:#1b2d40;
+    font-family: 'Poppins', sans-serif;
+}
+.wellcomeText h1{
+    font-size: 25px;
+    height: 44px;
+    font-weight: 600;
+}
+.wellcomeText p{
+    font-size: 14px;
+    height: 20px;
+    margin: 0px 10px 10px 0px;
+    font-weight: 500;
+    width: 100%;
+    height: 100%;
+}
+.wellcomeHome img{
+    width: 25%;
+}
+.containerHome{
+  display: grid;
+  grid-template-columns: 1.25fr 0.5fr;
+  grid-template-rows: 1fr;
+  gap: 22px;
+  justify-content: start;
+  font-family: 'Poppins', sans-serif;
+}
+.containerLeft{
+    margin: 0px;
+}
+.widgets{
+    padding: 5px 5px 8px 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color:#1b2d40;
+}
+.Anuncios{
+    text-align: -webkit-center;
+}
+.Anuncios img {
+    width: 98%;
+    border-radius: 5px;
+}
+.Anuncios h1{
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    height: 44px;
+    align-content: center;
+    text-align: left;
+}
+.Notificaciones h1{
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    height: 44px;
+    align-content: center;
+    text-align: left;
+}
+.NotificacionesBox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Notificacion{
+    padding: 6px 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    background-color: #e3e8f0;
+    border-radius: 20px;
+    align-items: center;
+}
+.NotificationText {
+    color: #333
+}
+.NotificationText h4{
+    margin: 0px;
+    font-size: 18px;
+    font-weight: 600;
+    height: 24px;
+    text-align: left;
+}
+.NotificationText h5{
+    margin: 0px;
+    font-size: 14px;
+    height: 24px;
+    font-weight: 400;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+}
+.NotificationIcon {
+    background-color: #253952;
+    border-radius: 100%;
+    text-align: center;
+    padding: 10px;
+    width: 20px;
+    height: 20px;
+}
+.NotificationIcon img{
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+.Important{
+    background-color: #cc3838;
+}
+.Cursos h1{
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    height: 44px;
+    align-content: center;
+    text-align: left;
+}
+.CursosBox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.Curso{
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    align-content: left;
+    padding: 20px;
+    width: 26%;
+    height: 10em;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    justify-content: space-between;
+}
+.CursoHeader h4{
+    font-size: 15px;
+    align-content: center;
+    margin: 0px;
+}
+.CursoHeader h5{
+    font-size: 12px;
+    align-content: center;
+    font-weight: 400;
+    margin: 0px;
+}
+.CursoFooter{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-between;
+}
+.CursoFooter h4{
+    font-size: 12px;
+    align-content: center;
+    font-weight: 400;
+    margin: 0px;
+}
+.CursoTutor{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+.Tutor{
+    width: 30px;
+    height: 30px;
+    align-content: center;
+    margin: 0px;
+    border-radius: 100%;
+    border: solid 3px #263851;
+}
+.Tutor img{
+    width: 100%;
+
+}
+.CursoPorcentaje{
+    align-content: center;
+}
+.CursoPorcentaje h3{
+    margin: 0px;
+}
+.Programacion{
+    background-color: #375f7f;
+}
+.Datos{
+    background-color: #d6a447;
+}
+.Negocio{
+    background-color: #27909e;
+}
+.Matematicas{
+    background-color: #1f4c9d;
+}
+
+.containerRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+    .calendar {
+      background: white;
+      border-radius: 3px;
+      overflow: hidden;
+      padding: 15px 20px;
+    }
+    .calendar h1{
+        font-size: 17px;
+        color: #1b2d40;
+        font-weight: 600;
+        margin: 0px;
+    }
+    .calendar-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #333;
+      margin: 10px 0px;
+    }
+    #month-year{
+        font-size: 15px;
+        font-weight: 600;
+        color: #1b2d40;
+        margin: 0px;
+    }
+    .button-calendar{
+        border: 0px;
+        background-color: white;
+        color: #555555;
+    }
+    .calendar-days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      text-align: center;
+      font-size: 14px;
+    }
+    .day {
+      padding: 8px;
+      cursor: pointer;
+      border-radius: 6px;
+    }
+    .day:hover {
+      background: #dfe4f2;
+    }
+    .today {
+      background: #2266c7;
+      color: white;
+      border-radius: 6px;
+    }
+
+    .vc-base-icon {
+    display: inline-block;
+    fill: none;
+    stroke: #1b2d40;
+    stroke-width: 2;
+    }
+    .button-calendar:hover{
+        background-color: #dee1e7;
+        border-radius: 10px;
+    }
+
+.clases{
+    padding: 10px 20px 20px 20px;
+    background-color: white;
+    border-radius: 3px;
+}
+.clases h3{
+    font: 26px;
+    height: 30px;
+    font-weight: 600;
+    margin: 0px;
+    color: #1b2d40;
+}
+.clasesBox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.clase {
+    padding: 10px 20px;
+    border-radius: 12px;
+    color: white;
+}
+.clase h4{
+    font-size: 15px;
+    margin: 0px;
+}
+.clase h5{
+    font-size: 13px;
+    margin: 0px;
+    font-weight: 400;
+}
+.rendimiento{
+    padding: 10px 20px 20px 20px;
+    background-color: white;
+    border-radius: 3px;
+    justify-items: center;
+}
+.rendimiento h3{
+    font: 26px;
+    height: 30px;
+    font-weight: 600;
+    margin: 0px;
+    color: #1b2d40;
+    justify-self: left;
+}
+.rendimientoBox{
+    width: 98%;
+}
+
+.helpHome{
+    padding: 5px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+.helpHome h1{
+    padding-left: 10px;
+    font-size: 17px;
+    height: 44px;
+    color: #253952;
+}
+.helpBox{
+    display: flex;
+    flex-direction: row;
+}
+.helpText{
+    margin-left: 10px;
+    text-align: left;
+}
+.helpText h2{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0px;
+    align-items: center;
+    color: #253952;
+}
+.helpText p{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0px;
+    margin-bottom: 10px;
+    align-items: center;
+    color: #333;
+}
+.helpBox img{
+    width: 20%;
+}
+.helpButtom{
+    justify-self: center;
+}
+.btn-ayuda{
+    font-family: 'Poppins', sans-serif;
+    padding: 9px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #3898ec;
+    color: white;
+    border: 0px;
+}

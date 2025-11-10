@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.BarNav{
+    display: flex;
+    padding: 10px 0px 0px 0px;
+    width: 18%;
+    
+    position: fixed;
+    left: 0;
+    height: 100%;
+    background-color: #263851;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+}
+.TitleNav{
+    width: 100%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    align-self: center;
+    border-bottom: solid 1px #f0f2ef;
+    padding-left: 10px;
+    
+}
+.TitleNav img{
+    width: 27%;
+}
+.TitleNav h1{
+    font-weight: 600;
+    font-size: 250%;
+}
+.Navegador{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+.NavTop{
+    margin-top: 5%;
+}
+.Lista:hover{
+    background-color: #1f2e42;
+    
+}
+.ListaFooter:hover{
+    background-color: #1f2e42;
+    
+}
+
+.Lista{
+    font-weight: 400;
+    font-size: 16px;
+    list-style:none;
+    transition: 0.3s;
+}
+.NavButtom{
+    margin-bottom: 10px;
+}
+.ListaFooter{
+    font-weight: 400;
+    font-size: 10px;
+    list-style:none;
+    transition: 0.3s;
+}
+.general{
+    margin-left: 18%;
+}
+a{
+    padding: 3% 0% 3% 10%;
+    text-decoration: none;
+    display: block;
+    color: white;
+}

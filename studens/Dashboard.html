@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assests/css/Layout.css">
+    <link rel="stylesheet" href="../assests/css/Dashboard.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+    <div class="BarNav">
+        <div class="TitleNav">
+            <img src="../assests/img/DeskIcon.NotBack.png" alt="">
+            <h1>.Desk</h1>
+        </div>
+        <div class="Navegador">
+            <div class="NavTop">
+                <ul>
+                    <li class="Lista"><a href="dashboard.html">Dashboard</a></li>
+                    <li class="Lista"><a href="">Cursos</a></li>
+                    <li class="Lista"><a href="">Calificaciones</a></li>
+                    <li class="Lista"><a href="">Perfil</a></li>
+                    <li class="Lista"><a href="">Cerrar sesion</a></li>
+                </ul>
+            </div>
+            <div class="NavButtom">
+                <ul>
+                    <li class="ListaFooter"><a href="">Portal Estudiante</a></li>
+                    <li class="ListaFooter"><a href="">Privacidad</a></li>
+                    <li class="ListaFooter"><a href="">Accesibilidad</a></li>
+                    <li class="ListaFooter"><a href="">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="general">
+        <div class="containerHeader">
+            <img src="../assests/img/DeskIcon.NotBack.png" alt="">
+        </div>
+        <div class="container">
+            <div class="wellcomeHome">
+                <img src="../assests/img/IconDashboard.png" alt="">
+                <div class="wellcomeText">
+                    <h1>Hi [User] , Wellcome Back!</h1>
+                    <p>Tu ruta de aprendizaje te espera. Utiliza este panel para <b>gestionar tus cursos, revisar calificaciones y acceder a los materiales</b> sin distracciones.</p>
+                </div>
+            </div>
+            <div class="containerHome">
+                <div class="containerLeft">
+                    <div class="Anuncios widgets">
+                        <h1>Anuncio - Nuevo Periodo Academico 2025</h1>
+                        <img src="../assests/img/AnuncioEjemplo.jpg" alt="">
+                    </div>
+                    <div class="Notificaciones widgets">
+                        <h1>Notificaciones</h1>
+                        <div class="NotificacionesBox">
+                            <div class="Notificacion">
+                                <div class="NotificationIcon">
+                                    <img src="../assests/img/noti_icon.png" alt="">
+                                </div>
+                                <div class="NotificationText">
+                                    <h4>1202 ALGORITMOS I</h4>
+                                    <h5>Añadido: Sesión 2 - Importancia de los Algoritmos en nuestro dia a dia</h5>
+                                </div>
+                            </div>
+                            <div class="Notificacion">
+                                <div class="NotificationIcon Important">
+                                    <img src="../assests/img/noti_icon_important.png" alt="">
+                                </div>
+                                <div class="NotificationText">
+                                    <h4>1205 BASE DE DATOS</h4>
+                                    <h5>Calificación añadida: Evaluación Teorica 1</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Cursos widgets">
+                        <h1>Cursos</h1>
+                        <div class="CursosBox">
+                            <div class="Curso Programacion">
+                                <div class="CursoHeader">
+                                    <h4>1202 ALGORITMOS I</h4>
+                                    <h5>Abierto</h5>
+                                </div>
+                                <div class="CursoFooter">
+                                    <div class="CursoTutor">
+                                        <div class="Tutor">
+                                            <img src="../assests/img/tutor_icon.png" alt="">
+                                        </div>
+                                        <h4>[TutorName]</h4>
+                                    </div>
+                                    <div class="CursoPorcentaje">
+                                        <h3>1%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Curso Matematicas">
+                                <div class="CursoHeader">
+                                    <h4>1203 MATEMATICAS I</h4>
+                                    <h5>Abierto</h5>
+                                </div>
+                                <div class="CursoFooter">
+                                    <div class="CursoTutor">
+                                        <div class="Tutor">
+                                            <img src="../assests/img/tutor_icon.png" alt="">
+                                        </div>
+                                        <h4>[TutorName]</h4>
+                                    </div>
+                                    <div class="CursoPorcentaje">
+                                        <h3>2%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Curso Negocio">
+                                <div class="CursoHeader">
+                                    <h4>1204 SISTEMAS DE NEGOCIOS</h4>
+                                    <h5>Abierto</h5>
+                                </div>
+                                <div class="CursoFooter">
+                                    <div class="CursoTutor">
+                                        <div class="Tutor">
+                                            <img src="../assests/img/tutor_icon.png" alt="">
+                                        </div>
+                                        <h4>[TutorName]</h4>
+                                    </div>
+                                    <div class="CursoPorcentaje">
+                                        <h3>1%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Curso Datos">
+                                <div class="CursoHeader">
+                                    <h4>1205 BASE DE DATOS</h4>
+                                    <h5>Abierto</h5>
+                                </div>
+                                <div class="CursoFooter">
+                                    <div class="CursoTutor">
+                                        <div class="Tutor">
+                                            <img src="../assests/img/tutor_icon.png" alt="">
+                                        </div>
+                                        <h4>[TutorName]</h4>
+                                    </div>
+                                    <div class="CursoPorcentaje">
+                                        <h3>1%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="Curso Programacion">
+                                <div class="CursoHeader">
+                                    <h4>1205 PROGRAMACION I</h4>
+                                    <h5>Abierto</h5>
+                                </div>
+                                <div class="CursoFooter">
+                                    <div class="CursoTutor">
+                                        <div class="Tutor">
+                                            <img src="../assests/img/tutor_icon.png" alt="">
+                                        </div>
+                                        <h4>[TutorName]</h4>
+                                    </div>
+                                    <div class="CursoPorcentaje">
+                                        <h3>0%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="containerRight">
+                    <div class="calendar">
+                            <h1>Calendario</h1>
+                            <div class="calendar-header">
+                            <button type="button" class="button-calendar" id="prev"><svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="24" height="24" class="vc-base-icon"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                            <h3 id="month-year"></h3>
+                            <button class="button-calendar" id="next"><svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="24" height="24" class="vc-base-icon"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                            </div>
+                            <div class="calendar-days" id="days"></div>
+                    </div>
+                    <div class="clases">
+                        <h3>Clases</h3>
+                        <div class="clasesBox">
+                            <div class="clase Programacion">
+                                <h4>ALGORITMOS I</h4>
+                                <h5>Lunes 9am (Aula 403)</h5>
+                            </div>
+                            <div class="clase Datos">
+                                <h4>BASE DE DATOS</h4>
+                                <h5>Lunes 11am (Aula 201)</h5>
+                            </div>
+                            <div class="clase Negocio">
+                                <h4>SISTEMAS DE NEGOCIOS</h4>
+                                <h5>Lunes 2pm (Aula 220)</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rendimiento">
+                        <h3>Rendimiento</h3>
+                        <div class="rendimientoBox">
+                            <canvas id="rendimientoChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="helpHome">
+                <h1>Ayuda al estudiante</h1>
+                <div class="helpBox">
+                    <img src="../assests/img/AyudaEstudianteIconEjemplo.jpg" alt="">
+                    <div class="helpText">
+                        <h2>🧭 ¿Necesitas ayuda?</h2>
+                        <p>Escríbenos o completa el formulario y te responderemos lo antes posible.
+                            <br>
+                            <br>
+                            📩 soporte@instituto.edu.pe
+                            <br>
+                            📞 (01) 555-1234
+                        </p>
+                        <div class="helpButtom">
+                            <button class="btn-ayuda">Solicitar ayuda</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+<script>
+    const daysContainer = document.getElementById("days");
+    const monthYear = document.getElementById("month-year");
+    const prevBtn = document.getElementById("prev");
+    const nextBtn = document.getElementById("next");
+
+    let date = new Date();
+
+    function renderCalendar() {
+      const year = date.getFullYear();
+      const month = date.getMonth();
+
+      // Nombre del mes
+      const monthNames = [
+        "ENERO","FEBRERO","MARZO","ABRIL","MAYO","JULIO",
+        "JUNIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"
+      ];
+      monthYear.textContent = `${monthNames[month]} ${year}`;
+
+      // Limpiar días anteriores
+      daysContainer.innerHTML = "";
+
+      const firstDay = new Date(year, month, 1).getDay();
+      const lastDate = new Date(year, month + 1, 0).getDate();
+
+      // Espacios en blanco antes del primer día
+      for (let i = 0; i < firstDay; i++) {
+        daysContainer.innerHTML += `<div></div>`;
+      }
+
+      // Días del mes
+      for (let i = 1; i <= lastDate; i++) {
+        const today = new Date();
+        const isToday =
+          i === today.getDate() &&
+          month === today.getMonth() &&
+          year === today.getFullYear();
+        daysContainer.innerHTML += `<div class="day ${isToday ? "today" : ""}">${i}</div>`;
+      }
+    }
+
+    prevBtn.onclick = () => {
+      date.setMonth(date.getMonth() - 1);
+      renderCalendar();
+    };
+    nextBtn.onclick = () => {
+      date.setMonth(date.getMonth() + 1);
+      renderCalendar();
+    };
+
+    renderCalendar();
+  </script>
+  <script>
+const ctx = document.getElementById('rendimientoChart');
+
+new Chart(ctx, {
+  type: 'doughnut',
+  data: {
+    labels: ['Completado', 'Pendiente'],
+    datasets: [{
+      data: [5, 95],
+      backgroundColor: ['#697b68', '#ccc'],
+      borderWidth: 0
+    }]
+  },
+  options: {
+    plugins: {
+      legend: { display: false }
+    },
+    cutout: '70%'
+  }
+});
+</script>
+</body>
+</html>
