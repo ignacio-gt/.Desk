@@ -6,11 +6,11 @@
     <title>Document</title>
     <link rel="stylesheet" href="../assests/css/Layout.css">
     <link rel="stylesheet" href="../assests/css/Dashboard.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
 </head>
 <body>
-    <div class="BarNav">
+    <button class="menu-toggle" onclick="toggleNav()">☰</button>
+    
+    <div class="BarNav" id="sideNav">
         <div class="TitleNav">
             <img src="../assests/img/DeskIcon.NotBack.png" alt="">
             <h1>.Desk</h1>
@@ -18,11 +18,46 @@
         <div class="Navegador">
             <div class="NavTop">
                 <ul>
-                    <li class="Lista"><a href="dashboard.html">Dashboard</a></li>
-                    <li class="Lista"><a href="">Cursos</a></li>
-                    <li class="Lista"><a href="">Calificaciones</a></li>
-                    <li class="Lista"><a href="">Perfil</a></li>
-                    <li class="Lista"><a href="">Cerrar sesion</a></li>
+                    <li class="Lista">
+                        <a href="dashboard.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                            </svg>
+                            Cursos
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                            </svg>
+                            Rendimiento
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                            </svg>
+                            Cerrar sesion
+                        </a>
+                    </li>
                 </ul>
             </div>
             <div class="NavButtom">
@@ -49,11 +84,11 @@
             </div>
             <div class="containerHome">
                 <div class="containerLeft">
-                    <div class="Anuncios widgets">
+                    <div class="Anuncios widgets-left">
                         <h1>Anuncio - Nuevo Periodo Academico 2025</h1>
                         <img src="../assests/img/AnuncioEjemplo.jpg" alt="">
                     </div>
-                    <div class="Notificaciones widgets">
+                    <div class="Notificaciones widgets-left">
                         <h1>Notificaciones</h1>
                         <div class="NotificacionesBox">
                             <div class="Notificacion">
@@ -76,7 +111,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="Cursos widgets">
+                    <div class="Cursos widgets-left">
                         <h1>Cursos</h1>
                         <div class="CursosBox">
                             <div class="Curso Programacion">
@@ -168,7 +203,7 @@
                     </div>
                 </div>
                 <div class="containerRight">
-                    <div class="calendar">
+                    <div class="calendar widgets-right">
                             <h1>Calendario</h1>
                             <div class="calendar-header">
                             <button type="button" class="button-calendar" id="prev"><svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="24" height="24" class="vc-base-icon"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
@@ -177,7 +212,7 @@
                             </div>
                             <div class="calendar-days" id="days"></div>
                     </div>
-                    <div class="clases">
+                    <div class="clases widgets-right">
                         <h3>Clases</h3>
                         <div class="clasesBox">
                             <div class="clase Programacion">
@@ -194,10 +229,22 @@
                             </div>
                         </div>
                     </div>
-                    <div class="rendimiento">
+                    <div class="rendimiento widgets-right">
                         <h3>Rendimiento</h3>
                         <div class="rendimientoBox">
-                            <canvas id="rendimientoChart"></canvas>
+                            <div class="rendimientoTextBox">
+                                <div class="rendimientoText">
+                                    <div class="circle completado"></div>
+                                    <h5>Completado</h5>
+                                    </div>
+                                <div class="rendimientoText">
+                                    <div class="circle pendiente"></div>
+                                    <h5>Pendiente</h5>
+                                </div>
+                            </div>
+                            <div class="circleRendimiento">
+                                <span>5%</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -207,7 +254,7 @@
                 <div class="helpBox">
                     <img src="../assests/img/AyudaEstudianteIconEjemplo.jpg" alt="">
                     <div class="helpText">
-                        <h2>🧭 ¿Necesitas ayuda?</h2>
+                        <h2>¿Necesitas ayuda?</h2>
                         <p>Escríbenos o completa el formulario y te responderemos lo antes posible.
                             <br>
                             <br>
@@ -223,79 +270,7 @@
             </div>
         </div>
     </div>  
-
-<script>
-    const daysContainer = document.getElementById("days");
-    const monthYear = document.getElementById("month-year");
-    const prevBtn = document.getElementById("prev");
-    const nextBtn = document.getElementById("next");
-
-    let date = new Date();
-
-    function renderCalendar() {
-      const year = date.getFullYear();
-      const month = date.getMonth();
-
-      // Nombre del mes
-      const monthNames = [
-        "ENERO","FEBRERO","MARZO","ABRIL","MAYO","JULIO",
-        "JUNIO","AGOSTO","SEPTIEMBRE","OCTUBRE","NOVIEMBRE","DICIEMBRE"
-      ];
-      monthYear.textContent = `${monthNames[month]} ${year}`;
-
-      // Limpiar días anteriores
-      daysContainer.innerHTML = "";
-
-      const firstDay = new Date(year, month, 1).getDay();
-      const lastDate = new Date(year, month + 1, 0).getDate();
-
-      // Espacios en blanco antes del primer día
-      for (let i = 0; i < firstDay; i++) {
-        daysContainer.innerHTML += `<div></div>`;
-      }
-
-      // Días del mes
-      for (let i = 1; i <= lastDate; i++) {
-        const today = new Date();
-        const isToday =
-          i === today.getDate() &&
-          month === today.getMonth() &&
-          year === today.getFullYear();
-        daysContainer.innerHTML += `<div class="day ${isToday ? "today" : ""}">${i}</div>`;
-      }
-    }
-
-    prevBtn.onclick = () => {
-      date.setMonth(date.getMonth() - 1);
-      renderCalendar();
-    };
-    nextBtn.onclick = () => {
-      date.setMonth(date.getMonth() + 1);
-      renderCalendar();
-    };
-
-    renderCalendar();
-  </script>
-  <script>
-const ctx = document.getElementById('rendimientoChart');
-
-new Chart(ctx, {
-  type: 'doughnut',
-  data: {
-    labels: ['Completado', 'Pendiente'],
-    datasets: [{
-      data: [5, 95],
-      backgroundColor: ['#697b68', '#ccc'],
-      borderWidth: 0
-    }]
-  },
-  options: {
-    plugins: {
-      legend: { display: false }
-    },
-    cutout: '70%'
-  }
-});
-</script>
 </body>
+    <script src="../assests/js/Dashboard.js"></script>
+    <script src="../assests/js/Layout.js"></script>
 </html>
