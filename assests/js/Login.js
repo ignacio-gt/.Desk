@@ -23,3 +23,7 @@ checkBtn.addEventListener("change", function() {
     enlace.style.color="#666f79";
   }
 });
+
+  document.querySelector('.buttomLogin').addEventListener('click', () => {
+    window.location.href = 'dashboard.html';
+  });

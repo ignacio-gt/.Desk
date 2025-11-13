@@ -8,7 +8,10 @@ h1{
     margin: 0px;
     margin: 10px 0px;
 }
-
+a{
+    margin: 0px;
+    padding: 0px;
+}
 
 .containerHeader{
     display: flex;
@@ -33,6 +36,9 @@ h1{
     flex-direction: column;
     gap: 16px;
     max-width: 92%;
+}
+.widgets{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 .wellcomeHome{
     display: flex;
@@ -69,21 +75,29 @@ h1{
   justify-content: start;
   font-family: 'Poppins', sans-serif;
 }
+
+/* -------------> CONTAINER LEFT ( Anuncios,Notificaciones,Cursos )  <------------- */
+
 .containerLeft{
     margin: 0px;
 }
+
 .widgets-left{
     padding: 5px 8px 8px 8px;
     margin-bottom: 10px;
     background-color: white;
     border-radius: 5px;
     color:#1b2d40;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
+
 .Anuncios{
     text-align: -webkit-center;
 }
 .Anuncios img {
-    width: 98%;
+    width: 100%;
+    height: 100%;
 }
 .Anuncios h1{
     padding-left: 10px;
@@ -93,19 +107,48 @@ h1{
     align-content: center;
     text-align: left;
 }
-.Notificaciones h1{
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 600;
-    height: 44px;
-    align-content: center;
-    text-align: left;
+.slider-relative{
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    width: 98%;
+    transition: transform 0.3s ease;
 }
-.NotificacionesBox{
+.slider{
     display: flex;
-    flex-direction: column;
-    gap: 5px;
+    animation: slide 50s infinite;
 }
+.slider a{
+    flex: 1 0 100%;
+    object-fit: cover;
+    padding: 0px;
+    margin: 0px;
+}
+.slider-relative:hover{
+    transform: scale(1.03);
+}
+.slider-relative:hover .slider{
+    animation-play-state: paused;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  15%   { transform: translateX(0); }
+
+  18%  { transform: translateX(-100%); }
+  25%  { transform: translateX(-100%); }
+
+  28%  { transform: translateX(-200%); }
+  50%  { transform: translateX(-200%); }
+
+  53%  { transform: translateX(-100%); }
+  75%  { transform: translateX(-100%); }
+
+  78% { transform: translateX(0); }  
+  100% { transform: translateX(0); }
+}
+
+
 .Notificacion{
     padding: 6px 10px;
     display: flex;
@@ -114,6 +157,19 @@ h1{
     background-color: #e3e8f0;
     border-radius: 20px;
     align-items: center;
+}
+.NotificacionesBox{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.Notificaciones h1{
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    height: 44px;
+    align-content: center;
+    text-align: left;
 }
 .NotificationText {
     color: #333
@@ -150,6 +206,7 @@ h1{
 .Important{
     background-color: #cc3838;
 }
+
 .Cursos h1{
     padding-left: 10px;
     font-size: 17px;
@@ -176,6 +233,7 @@ h1{
     background-color: #333;
     color: white;
     justify-content: space-between;
+    transition: transform 0.3s ease;
 }
 .CursoHeader h4{
     font-size: 15px;
@@ -236,49 +294,59 @@ h1{
     background-color: #1f4c9d;
 }
 
+.Curso:hover{
+    transform: scale(1.02) translateY(-2%);
+    z-index: 2;
+}
+
+
+/* -------------> CONTAINER RIGHT ( Calendario,Clases,Progreso )  <------------- */
+
 .containerRight{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 10px;
     margin-bottom: 10px;
-    
+}
+.widgets-right{
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    flex: 1;
+    align-content: center;
 }
 
-    .calendar {
-      background: white;
-      border-radius: 3px;
-      overflow: hidden;
-      padding: 15px 20px;
-    }
-    .calendar h1{
-        font-size: 17px;
-        color: #1b2d40;
-        font-weight: 600;
-        margin: 0px;
-    }
-    .calendar-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      color: #333;
-      margin: 10px 0px;
-      text-align: center;
-    }
-    #month-year{
-        font-size: 15px;
-        font-weight: 600;
-        color: #1b2d40;
-        margin: 0px;
-    }
-    .button-calendar{
-        border: 0px;
-        background-color: white;
-        color: #555555;
-    }
 .calendar {
-  width: 100%;
-  max-width: 100%;
+    background: white;
+    border-radius: 3px;
+    overflow: hidden;
+    padding: 15px 20px;
+    width: 100%;
+    max-width: 100%;
+}
+.calendar h1{
+    font-size: 17px;
+    color: #1b2d40;
+    font-weight: 600;
+    margin: 0px;
+}
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    margin: 10px 0px;
+    text-align: center;
+}
+#month-year{
+    font-size: 15px;
+    font-weight: 600;
+    color: #1b2d40;
+    margin: 0px;
+}
+.button-calendar{
+    border: 0px;
+    background-color: white;
+    color: #555555;
 }
 .calendar-days > * {
   min-width: 0;
@@ -295,31 +363,29 @@ h1{
     box-sizing: border-box;
     gap: 1px;
 }
-
-    .day {
-      padding: 8px;
-      cursor: pointer;
-      border-radius: 6px;
-    }
-    .day:hover {
-      background: #dfe4f2;
-    }
-    .today {
-      background: #1a3b69;
-      color: white;
-      border-radius: 5px;
-    }
-
-    .vc-base-icon {
+.day {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.day:hover {
+    background: #dfe4f2;
+}
+.today {
+    background: #1a3b69;
+    color: white;
+    border-radius: 5px;
+}
+.vc-base-icon {
     display: inline-block;
     fill: none;
     stroke: #1b2d40;
     stroke-width: 2;
-    }
-    .button-calendar:hover{
-        background-color: #dee1e7;
-        border-radius: 10px;
-    }
+}
+.button-calendar:hover{
+    background-color: #dee1e7;
+    border-radius: 10px;
+}
 
 .clases{
     padding: 10px 20px 20px 20px;
@@ -346,6 +412,7 @@ h1{
     padding: 10px 20px;
     border-radius: 12px;
     color: white;
+    transition: transform 0.3s ease;
 }
 .clase h4{
     font-size: 15px;
@@ -356,6 +423,11 @@ h1{
     margin: 0px;
     font-weight: 400;
 }
+.clase:hover{
+    transform: scale(1.02) translateY(-2%);
+    z-index: 2;
+}
+
 .rendimiento{
     padding: 10px 20px 20px 20px;
     background-color: white;
@@ -381,6 +453,56 @@ h1{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+}
+.circleRendimiento {
+  width: 80%;
+  border-radius: 50%;
+  background: conic-gradient(#375f7f 5%, #ddd 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #333;
+  aspect-ratio: 1 / 1;
+}
+span{
+    background-color: white;
+    padding: 18%;
+    align-content: center;
+    text-align: center;
+    width: 40%;
+    aspect-ratio: 1 / 1;
+    border-radius: 100%;
+    color: #263851;
+}
+.circle{
+    padding: 10px;
+    background-color: #333;
+    border-radius: 100%;
+}
+
+.rendimientoTextBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.rendimientoText{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.rendimientoText h5{
+    margin: 0px;
+    font-weight: 500;
+    font-size: 75%;
+}
+
+.completado{
+    background-color: #375f7f;
+}
+.pendiente{
+    background-color: #ddd;
 }
 
 .helpHome{
@@ -435,113 +557,8 @@ h1{
     border: 0px;
 }
 
-.circleRendimiento {
-  width: 80%;
-  border-radius: 50%;
-  background: conic-gradient(#375f7f 5%, #ddd 0%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  color: #333;
-  aspect-ratio: 1 / 1;
-}
-span{
-    background-color: white;
-    padding: 18%;
-    align-content: center;
-    text-align: center;
-    width: 40%;
-    aspect-ratio: 1 / 1;
-    border-radius: 100%;
-    color: #263851;
-}
-.circle{
-    padding: 10px;
-    background-color: #333;
-    border-radius: 100%;
-}
 
-.rendimientoTextBox{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
-}
-.rendimientoText{
-    display: flex;
-    align-items: center;
-    gap: 5px;
-}
-.rendimientoText h5{
-    margin: 0px;
-    font-weight: 500;
-    font-size: 75%;
-}
-
-.completado{
-    background-color: #375f7f;
-}
-.pendiente{
-    background-color: #ddd;
-}
-
-.widgets-right{
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-    flex: 1;
-    align-content: center;
-}
-.widgets-left{
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-.widgets{
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-
-
-.menu-toggle {
-    display: none;
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 2000;
-    background-color: #263851;
-    color: white;
-    border: none;
-    font-size: 26px;
-    padding: 10px 14px;
-    border-radius: 6px;
-    cursor: pointer;
-}
-
-@media (max-width: 768px) {
-    .BarNav {
-        position: fixed;
-        left: -100%;
-        top: 0;
-        width: 70%;
-        height: 100vh;
-        background-color: #263851;
-        transition: left 0.3s ease;
-        z-index: 1500;
-        box-shadow: 2px 0 10px rgba(0,0,0,0.3);
-    }
-    .TitleNav{
-        flex-direction: row-reverse;
-    }
-
-    .BarNav.active {
-        left: 0;
-    }
-
-    .general {
-        margin-left: 0;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
+@media (max-width: 842px) {
     .containerHome{
         display: flex;
         flex-direction: column;
@@ -557,27 +574,4 @@ span{
     .circleRendimiento{
         width: 50%;
     }
-}
-
-.slider-relative{
-    border-radius: 5px;
-    position: relative;
-    overflow: hidden;
-}
-.slider{
-    display: flex;
-    animation: slide 12s infinite;
-}
-.slider img{
-    flex: 1 0 100%;
-    object-fit: cover;
-}
-@keyframes slide {
-  0%   { transform: translateX(0); }
-  33%  { transform: translateX(-100%); }
-  66%  { transform: translateX(-200%); }
-  100% { transform: translateX(0); }
-}
-.slider:hover {
-  animation-play-state: paused;
 }
