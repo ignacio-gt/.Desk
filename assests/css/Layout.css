@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 html{
+    background-color: var(--color_bg);
+    font-family: var(--font_global);
     margin: 0px;
     padding: 0px;
 }
@@ -33,7 +33,7 @@ ul a{
     position: fixed;
     left: 0;
     height: 100%;
-    background-color: #2D3250;
+    background-color: var(--color_main_user_primary);
     color: white;
     font-family: 'Poppins', sans-serif;
     flex-direction: column;
@@ -48,7 +48,7 @@ ul a{
     align-self: center;
     border-bottom: solid 1px #f0f2ef;
     padding-top: 10px;
-    padding-right: 10px;
+    padding-right: 14px;
     padding-bottom: 14px;
     
 }
@@ -112,7 +112,7 @@ ul{
     top: 15px;
     left: 15px;
     z-index: 2000;
-    background-color: #263851;
+    background-color: var(--color_main_user_primary);
     color: white;
     border: none;
     font-size: 26px;

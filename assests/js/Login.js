@@ -6,7 +6,7 @@ let enlace = document.getElementById("enlace");
 
 checkBtn.addEventListener("change", function() {
   if (checkBtn.checked) {
-    container.style.backgroundColor = "#37483F";
+    container.style.backgroundColor = "var(--color_main_contributor)";
     textInputs.forEach(input => {
     input.style.backgroundColor = "#4B5C52";
     input.style.borderColor = "#C5A46D";
@@ -14,7 +14,7 @@ checkBtn.addEventListener("change", function() {
     buttomLogin.style.backgroundColor="#C5A46D";
     enlace.style.color="#E3E3E3";
   } else {
-    container.style.backgroundColor = "rgb(45, 50, 80)";
+    container.style.backgroundColor = "var(--color_main_user)";
     textInputs.forEach(input => {
     input.style.backgroundColor = "#424769";
     input.style.borderColor = "#697b69";

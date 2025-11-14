@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../assests/css/Main.css">
     <link rel="stylesheet" href="../assests/css/Layout.css">
     <link rel="stylesheet" href="../assests/css/Dashboard.css">
 </head>
@@ -211,12 +212,15 @@
                 <div class="containerRight">
                     <div class="calendar widgets-right">
                             <h1>Calendario</h1>
-                            <div class="calendar-header">
-                            <button type="button" class="button-calendar" id="prev"><svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="24" height="24" class="vc-base-icon"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
-                            <h3 id="month-year"></h3>
-                            <button class="button-calendar" id="next"><svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="24" height="24" class="vc-base-icon"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                            <div class="calendario">
+                                <div class="calendar-header">
+                                    <button type="button" class="button-calendar" id="prev"><svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="24" height="24" class="vc-base-icon"><polyline points="15 18 9 12 15 6"></polyline></svg></button>
+                                    <h3 id="month-year"></h3>
+                                    <button class="button-calendar" id="next"><svg stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" width="24" height="24" class="vc-base-icon"><polyline points="9 18 15 12 9 6"></polyline></svg></button>
+                                </div>
+                                <div class="calendar-days" id="days"></div>
                             </div>
-                            <div class="calendar-days" id="days"></div>
+
                     </div>
                     <div class="clases widgets-right">
                         <h3>Clases</h3>

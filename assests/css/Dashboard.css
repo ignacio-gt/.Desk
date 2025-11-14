@@ -1,12 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-html{
-    background-color: #dee1e7;
-    font-family: 'Poppins', sans-serif;
-}
 h1{
     margin: 0px;
     margin: 10px 0px;
+}
+h3,h4,h5{
+    margin: 0px;
 }
 a{
     margin: 0px;
@@ -18,13 +15,12 @@ a{
     flex-direction: row;
     width: 100%;
     height: 5%;
-    border-bottom: solid 5px #435e83;
-    background-image: url(../img/decorationDashboard.png);
-    background-position: 50% 50%;
-    background-size: contain;
-    background-repeat: repeat;
-    background-attachment: fixed;
-    justify-content:flex-end;
+    border-bottom: solid 5px #37483f;
+    background-image: url(../img/DecorationDashboard.svg);
+    background-position: 50% 48%;
+    background-size: cover;
+    background-repeat: space;
+    justify-content: flex-end;
     align-items: center;
 }
 .containerHeader img{
@@ -48,9 +44,12 @@ a{
     border-radius: 5px;
     background-color: white;
 }
+.wellcomeHome p b{
+    color: var(--color_color_tertiary);
+}
 .wellcomeText{
     margin-left:20px;
-    color:#1b2d40;
+    color: var(--font_color_primary);
     font-family: 'Poppins', sans-serif;
 }
 .wellcomeText h1{
@@ -87,10 +86,14 @@ a{
     margin-bottom: 10px;
     background-color: white;
     border-radius: 5px;
-    color:#1b2d40;
+    color: var(--font_color_primary);
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
-
+.widgets-left h1 {
+    font-size: 17px;
+    padding-left: 10px;
+    font-weight: 600;
+}
 
 .Anuncios{
     text-align: -webkit-center;
@@ -100,9 +103,6 @@ a{
     height: 100%;
 }
 .Anuncios h1{
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 600;
     height: 44px;
     align-content: center;
     text-align: left;
@@ -164,15 +164,12 @@ a{
     gap: 5px;
 }
 .Notificaciones h1{
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 600;
     height: 44px;
     align-content: center;
     text-align: left;
 }
 .NotificationText {
-    color: #333
+    color: var(--font_color_secondary)
 }
 .NotificationText h4{
     margin: 0px;
@@ -208,9 +205,6 @@ a{
 }
 
 .Cursos h1{
-    padding-left: 10px;
-    font-size: 17px;
-    font-weight: 600;
     height: 44px;
     align-content: center;
     text-align: left;
@@ -310,22 +304,29 @@ a{
     margin-bottom: 10px;
 }
 .widgets-right{
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    display: flex;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     flex: 1;
-    align-content: center;
+    padding: 20px 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 3px;
+    color: var(--font_color_primary);
+}
+.widgets-right h3{
+    margin-bottom: 10px;
 }
 
 .calendar {
-    background: white;
-    border-radius: 3px;
     overflow: hidden;
     padding: 15px 20px;
     width: 100%;
     max-width: 100%;
+    flex: none;
 }
 .calendar h1{
     font-size: 17px;
-    color: #1b2d40;
     font-weight: 600;
     margin: 0px;
 }
@@ -333,14 +334,14 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #333;
+    color: var(--font_color_primary);
     margin: 10px 0px;
     text-align: center;
 }
 #month-year{
     font-size: 15px;
     font-weight: 600;
-    color: #1b2d40;
+    color: var(--font_color_secondary);
     margin: 0px;
 }
 .button-calendar{
@@ -372,14 +373,14 @@ a{
     background: #dfe4f2;
 }
 .today {
-    background: #1a3b69;
+    background-color: var(--color_color_tertiary);
     color: white;
     border-radius: 5px;
 }
 .vc-base-icon {
     display: inline-block;
     fill: none;
-    stroke: #1b2d40;
+    stroke: #37483f;
     stroke-width: 2;
 }
 .button-calendar:hover{
@@ -388,19 +389,13 @@ a{
 }
 
 .clases{
-    padding: 10px 20px 20px 20px;
-    background-color: white;
-    border-radius: 3px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    gap: 5px;
 }
 .clases h3{
     font: 26px;
     height: 30px;
     font-weight: 600;
     margin: 0px;
-    color: #1b2d40;
 }
 .clasesBox{
     display: flex;
@@ -429,27 +424,19 @@ a{
 }
 
 .rendimiento{
-    padding: 10px 20px 20px 20px;
-    background-color: white;
-    border-radius: 3px;
     justify-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
     gap: 5px;
 }
 .rendimiento h3{
     font: 26px;
     height: 30px;
     font-weight: 600;
-    margin: 0px;
-    color: #1b2d40;
     justify-self: left;
 }
 .rendimientoBox{
     display: flex;
     width: 100%;
-    gap: 20px;
+    gap: 2em;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
@@ -457,7 +444,7 @@ a{
 .circleRendimiento {
   width: 80%;
   border-radius: 50%;
-  background: conic-gradient(#375f7f 5%, #ddd 0%);
+  background: conic-gradient(var(--color_color_tertiary) 5%, #ddd 0%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -473,7 +460,7 @@ span{
     width: 40%;
     aspect-ratio: 1 / 1;
     border-radius: 100%;
-    color: #263851;
+    color: var(--color_color_tertiary);
 }
 .circle{
     padding: 10px;
@@ -483,9 +470,10 @@ span{
 
 .rendimientoTextBox{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     gap: 10px;
+    font-weight: 500;
+    font-size: 75%;
 }
 .rendimientoText{
     display: flex;
@@ -493,13 +481,11 @@ span{
     gap: 5px;
 }
 .rendimientoText h5{
-    margin: 0px;
     font-weight: 500;
-    font-size: 75%;
 }
 
 .completado{
-    background-color: #375f7f;
+    background-color: var(--color_color_tertiary);
 }
 .pendiente{
     background-color: #ddd;
@@ -514,13 +500,15 @@ span{
 }
 .helpHome h1{
     padding-left: 10px;
+    font-weight: 600;
     font-size: 17px;
     height: 44px;
-    color: #253952;
+    color: var(--font_color_primary);
 }
 .helpBox{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .helpText{
     margin-left: 20px;
@@ -531,7 +519,7 @@ span{
     font-weight: 600;
     margin: 0px;
     align-items: center;
-    color: #253952;
+    color: var(--font_color_secondary);
 }
 .helpText p{
     font-size: 15px;
@@ -543,6 +531,7 @@ span{
 }
 .helpBox img{
     width: 20%;
+    height: 20%;
 }
 .helpButtom{
     justify-self: center;
@@ -552,7 +541,7 @@ span{
     padding: 9px 15px;
     font-size: 15px;
     font-weight: 500;
-    background-color: #3898ec;
+    background-color: var(--color_buttons);
     color: white;
     border: 0px;
 }
@@ -573,5 +562,15 @@ span{
     }
     .circleRendimiento{
         width: 50%;
+    }
+
+
+}
+@media (max-width: 1116px) {
+    .rendimientoTextBox{
+        flex-direction: column;
+    }
+    .rendimientoBox{
+        gap: 4em;
     }
 }
