@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assests/css/Main.css">
+    <link rel="stylesheet" href="../assests/css/Layout.css">
+    <link rel="stylesheet" href="../assests/css/Course.css">
+    <title>Document</title>
+</head>
+<body>
+    <button class="menu-toggle" onclick="toggleNav()">☰</button>
+    
+    <div class="BarNav" id="sideNav">
+        <div class="TitleNav">
+            <img src="../assests/img/DeskIcon.NotBack.png" alt="">
+            <h1>.Desk</h1>
+        </div>
+        <div class="Navegador">
+            <div class="NavTop">
+                <ul>
+                    <li class="Lista">
+                        <a href="dashboard.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m2.25 12 8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="Course.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                            </svg>
+                            Cursos
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                            </svg>
+                            Rendimiento
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
+                            </svg>
+                            Perfil
+                        </a>
+                    </li>
+                    <li class="Lista">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9V5.25A2.25 2.25 0 0 1 10.5 3h6a2.25 2.25 0 0 1 2.25 2.25v13.5A2.25 2.25 0 0 1 16.5 21h-6a2.25 2.25 0 0 1-2.25-2.25V15m-3 0-3-3m0 0 3-3m-3 3H15" />
+                            </svg>
+                            Cerrar sesion
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="NavButtom">
+                <ul>
+                    <li class="ListaFooter"><a href="">Portal Estudiante</a></li>
+                    <li class="ListaFooter"><a href="">Privacidad</a></li>
+                    <li class="ListaFooter"><a href="">Accesibilidad</a></li>
+                    <li class="ListaFooter"><a href="">Terminos y condiciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <main class="general">
+        <section>
+            <div class="section_header">
+                <h1>Cursos</h1>
+                <img src="../assests/img/DeskIcon.NotBack.png" alt="">
+            </div>
+            <div class="container">
+                <a class="learning_hub widgets" href="#">
+                    <span class="transition"></span>
+                    <span class="gradient"></span>
+                    <div class="learning_hub_text">
+                        <div class="learning_hub_text_box">
+                            <h2>Learning Hub</h2>
+                            <p>Accede a tus cursos anteriores, materiales y recursos adicionales</p>
+                        </div>
+                        <div class="learning_hub_tutor">
+                            <img src="../assests/img/DeskIcon.NotBack.png" alt="">
+                        </div>
+                    </div>
+                    <div class="learning_hub_img">
+                        <img src="../assests/img/IconCourse.png" alt="">
+                    </div>
+                </a>
+                <h2 class="module_title">CURSOS MODULO A0021</h2>
+                <div class="container_course">
+                    <a class="course programacion widgets" href="#">
+                        <div class="curso_header">
+                            <div class="curso_header_title">
+                                <h3>1202 ALGORITMOS I</h3>
+                                <h4>ABIERTO</h4>
+                            </div>
+                            <div class="curso_header_icon">
+                                <img class="course_icon" src="../assests/img/course_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="curso_footer">
+                            <div class="curso_tutor">
+                                <div class="tutor_icon">
+                                    <img src="../assests/img/tutor_icon.png" alt="">
+                                </div>
+                                <h4>[TutorName]</h4>
+                            </div>
+                            <div class="curso_rendimiento">
+                                <h4>1%</h4>
+                            </div>
+                        </div>
+                    </a>
+                    <a class="course matematicas widgets" href="#">
+                        <div class="curso_header">
+                            <div class="curso_header_title">
+                                <h3>1203 MATEMATICAS I</h3>
+                                <h4>ABIERTO</h4>
+                            </div>
+                            <div class="curso_header_icon">
+                                <img class="course_icon" src="../assests/img/course_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="curso_footer">
+                            <div class="curso_tutor">
+                                <div class="tutor_icon">
+                                    <img src="../assests/img/tutor_icon.png" alt="">
+                                </div>
+                                <h4>[TutorName]</h4>
+                            </div>
+                            <div class="curso_rendimiento">
+                                <h4>2%</h4>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="course negocio widgets" href="#">
+                        <div class="curso_header">
+                            <div class="curso_header_title">
+                                <h3>1204 SISTEMAS DE NEGOCIOS</h3>
+                                <h4>ABIERTO</h4>
+                            </div>
+                            <div class="curso_header_icon">
+                                <img class="course_icon" src="../assests/img/course_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="curso_footer">
+                            <div class="curso_tutor">
+                                <div class="tutor_icon">
+                                    <img src="../assests/img/tutor_icon.png" alt="">
+                                </div>
+                                <h4>[TutorName]</h4>
+                            </div>
+                            <div class="curso_rendimiento">
+                                <h4>1%</h4>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="course datos widgets" href="#">
+                        <div class="curso_header">
+                            <div class="curso_header_title">
+                                <h3>1205 BASE DE DATOS</h3>
+                                <h4>ABIERTO</h4>
+                            </div>
+                            <div class="curso_header_icon">
+                                <img class="course_icon" src="../assests/img/course_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="curso_footer">
+                            <div class="curso_tutor">
+                                <div class="tutor_icon">
+                                    <img src="../assests/img/tutor_icon.png" alt="">
+                                </div>
+                                <h4>[TutorName]</h4>
+                            </div>
+                            <div class="curso_rendimiento">
+                                <h4>1%</h4>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="course programacion widgets" href="#">
+                        <div class="curso_header">
+                            <div class="curso_header_title">
+                                <h3>1205 PROGRAMACION I</h3>
+                                <h4>ABIERTO</h4>
+                            </div>
+                            <div class="curso_header_icon">
+                                <img class="course_icon" src="../assests/img/course_icon.png" alt="">
+                            </div>
+                        </div>
+                        <div class="curso_footer">
+                            <div class="curso_tutor">
+                                <div class="tutor_icon">
+                                    <img src="../assests/img/tutor_icon.png" alt="">
+                                </div>
+                                <h4>[TutorName]</h4>
+                            </div>
+                            <div class="curso_rendimiento">
+                                <h4>0%</h4>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="container_extra">
+                    <div class="extra activity widgets">
+                        <h3>Actividades</h3>
+                        <div class="activity_box">
+                            <div class="notification">
+                                <div class="notification_icon Important">
+                                    <img src="../assests/img/noti_icon_important.png" alt="">
+                                </div>
+                                <div class="notification_text">
+                                    <h4>1205 BASE DE DATOS</h4>
+                                    <h5>Calificación añadida: Evaluación Teorica 1</h5>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="notification_icon">
+                                    <img src="../assests/img/noti_icon.png" alt="">
+                                </div>
+                                <div class="notification_text">
+                                    <h4>1202 ALGORITMOS I</h4>
+                                    <h5>Añadido: Sesión 2 - Importancia de los Algoritmos en nuestro dia a dia</h5>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="notification_icon">
+                                    <img src="../assests/img/noti_icon.png" alt="">
+                                </div>
+                                <div class="notification_text">
+                                    <h4>MATEMATICAS I</h4>
+                                    <h5>Añadido: Repasando lo aprendido</h5>
+                                </div>
+                            </div>
+                            <div class="notification">
+                                <div class="notification_icon">
+                                    <img src="../assests/img/noti_icon.png" alt="">
+                                </div>
+                                <div class="notification_text">
+                                    <h4>PROGRAMACION I</h4>
+                                    <h5>Recordatorio: Entrega de Tarea 2 - Funciones y Arrays</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="extra progress widgets">
+                        <h3>Rendimiento</h3>
+                        <div class="procress_box">
+                            <div class="procress_box_text">
+                                <div class="procress_box_text_description">
+                                    <div class="circle completado"></div>
+                                    <h5>Completado</h5>
+                                </div>
+                                <div class="procress_box_text_description">
+                                    <div class="circle pendiente"></div>
+                                    <h5>Pendiente</h5>
+                                </div>
+                            </div>
+                            <div class="procress_box_cicle">
+                                <div class="procress_circle">
+                                    <span class="procress_percentage">5%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+    <script src="../assests/js/Layout.js"></script>
+    <script src="../assests/js/Course.js"></script>
+</html>
